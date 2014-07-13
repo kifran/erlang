@@ -1,4 +1,0 @@
--module(day12).
--export([findit/1]).
-
-findit(Keyword,List) ->												
