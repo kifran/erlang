@@ -1,0 +1,5 @@
+-module(day13).
+-export([yop/1]).
+
+yop({error,Message}) -> io:fwrite(["error:",Message).
+yop(success)         -> io:fwrite("success").

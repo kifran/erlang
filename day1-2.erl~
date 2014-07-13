@@ -1,0 +1,5 @@
+-module(day1-2).
+-export([toten/1]).
+
+toten(0) -> 0;
+toten(10)-> 1 + toten(9).

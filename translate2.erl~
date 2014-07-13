@@ -1,0 +1,16 @@
+-module(translate2).
+-export([loop/0]).
+
+loop() ->
+    receive
+	{Pid,"casa"} ->
+	    Pid ! "house",
+	    loop();
+	{Pid,"bianca"} ->
+	    Pid ! "white",
+	    loop();
+	{Pid,_} ->
+	    Pid ! "Can't translate that",
+	    loop()
+end.
+ 
